@@ -1,0 +1,109 @@
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Missed packet
+Got serial input 'AKF'. Verified correct.
+Missed packet
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'aKF'. Contains Error.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Missed packet
+Got serial input 'AKF'. Verified correct.
+Got serial input 'aKF'. Contains Error.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'aKF'. Contains Error.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Missed packet
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Missed packet
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Missed packet
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Missed packet
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Total errors: 3
+Total errors percentage: 0.0322580645161
+Successful: 90
+Successful percentage: 0.967741935484
+Lost packets: 7
+Lost packets percentage: 0.07
+Lost packets + errors: 10
+Lost packets + errors percentage: 0.1
+

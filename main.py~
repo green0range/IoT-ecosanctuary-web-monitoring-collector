@@ -1,0 +1,89 @@
+#! /usr/bin/python
+
+
+# Imports
+import time
+import serialinterface
+import server
+from threading import Thread
+
+# This system creates 2 threads, 1 to constantly check for new data, and 1 to process already found data.
+# Multi-threading is used so that the collector doesn't miss any new data while processing older data.
+
+received_data = []
+
+#Processor thread
+class Processor(Thread):
+    global received_data
+    def __init__(self):
+        Thread.__init__(self)
+        self.daemon = True
+        self.start()
+        self.sensors = []
+        self.get_dat()
+        self.serv = server.Server()
+        for i in range(0, len(self.sensors)):
+            self.sensors[i] = self.sensors[i].split(",")
+    #NOT USED The data is now formated server side, server will still accept preformatted though.
+    def get_dat(self):
+        # This reads in the data file, which contains the data for which sensor is where
+        # and what attachments they have
+        try:
+            f = open('sensors.dat', 'r')
+            dat = f.read()
+            f.close()
+            # Process dat file
+            sData = dat.split("\n")
+            for i in range(0, len(sData)):
+                if list(sData[i])[0] == "#": # Comments
+                    pass
+                else:
+                    self.sensors.append(sData[i])
+        except:
+            print "No sensor config file, if you are using the newer server side formating, ignorge this warning."
+    def run(self):
+        global received_data
+        # Takes the first in queue
+        if len(received_data) > 0:
+            self.processing = received_data.pop(0)
+            print "started processing..." + str(self.processing)
+        else:
+	    self.processing = "NO_DATA"
+        # Loops through known sensors to find matching id.
+        if self.processing != "NO_DATA":
+		#for i in range(0, len(self.sensors)):
+		# since we are not using the config id system, this will submit all data with placeholder locations
+		# If the server gets anything with -1 lat it will use it's own id system, otherwise it will use the
+		# give value.
+		
+            	self.serv.submit_data("-1", "-1", ord(self.processing[0]), ord(self.processing[1]), time.time())
+                    
+class Reader(Thread):
+    global received_data
+    def __init__(self):
+   	self.conn = serialinterface.Connection()
+        Thread.__init__(self)
+        self.daemon = True
+        self.start()
+    def run(self):
+        global received_data
+        # Appends all data it gets to the received data list.
+        # This doubles as a processing queue for the processor.
+        # The Processor MUST remove data once processed, otherwise we have a memory leaks.
+        data = self.conn.get_input()
+        if data != -1:
+        	received_data.append(data)
+        print received_data
+
+# print startup message
+print "Running data collection program. Press Ctrl+C to stop"
+print "Warning, stopping will stop all data collection, warnings, alerts etc. You have been warned!"
+
+# Create threads
+p = Processor()
+r = Reader()
+
+# Run the main loop of the processor and reader thread.
+while 1:
+    r.run()
+    p.run()

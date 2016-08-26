@@ -1,0 +1,109 @@
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Missed packet
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Missed packet
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Missed packet
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Missed packet
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Missed packet
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Got serial input 'AKF'. Verified correct.
+Total errors: 0
+Total errors percentage: 0.0
+Successful: 95
+Successful percentage: 1.0
+Lost packets: 5
+Lost packets percentage: 0.05
+Lost packets + errors: 5
+Lost packets + errors percentage: 0.05
+

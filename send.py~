@@ -1,0 +1,53 @@
+#! /usr/bin/python2
+
+import urllib2
+import gmpy
+
+# This scipt provides the functonility of sending data to a server. Configuration (such as server address and such.) should be edited from the config file (server.config) and this scipt does not need to be edited. Import and use send_to_server() to send data. See docs.
+
+debug = True
+
+
+# Get data from config.
+f = open("server.config")
+config = f.read()
+f.close()
+config_list = config.split("\n")
+for i in range(0, len(config_list)):
+	if "PROTOCOL" in config_list[i]:
+		protocol = config_list[i].split("=")[1]
+	elif "DOMAIN" in config_list[i]:
+		domain = config_list[i].split("=")[1]
+	elif "PATH" in config_list[i]:
+		path = config_list[i].split("=")[1]
+	elif "METHOD" in config_list[i]:
+		method = config_list[i].split("=")[1]
+	elif "PASS" in config_list[i]:
+		passcode = gmpy.mpz(config_list[i].split("=")[1])
+
+def send_to_server(lat, lng, stype, value, time):
+	# Build the stage 2 url ready for sending data.
+	# This is done first so as to decrease time between stage 1 and 2
+	# Keys will timeout after 50 seconds by default.
+	url = protocol + domain + path + "?stage=2"
+	url += "&lat=" + str(lat) + "&lng=" + str(lng) + "&type=" + str(stype) + "&value=" + str(value) + "&time=" + str(time)
+	# get public key. 
+	if debug:
+		print "sending request to " + protocol + domain + path + "?stage=1"
+	pubkeys = urllib2.urlopen(protocol + domain + path + "?stage=1").read()
+	if debug:
+		print "got public key: " + pubkeys
+	n = gmpy.mpz(pubkeys.split(",")[0])
+	e = gmpy.mpz(pubkeys.split(",")[1])
+	c = ((passcode ** e)%n)
+	if debug:
+		print "encyrpted passcode as " + str(c)
+	url += "&pass="+str(c)
+	if debug:
+		print "Sending " + url
+	response = urllib2.urlopen(url).read()
+	if debug:
+		print "got response: "+response
+	return response
+	
+	
