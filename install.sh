@@ -22,9 +22,9 @@ if [ "$cont" == "y" ]; then
 	echo "CODE:" code >> sensor.config
 	echo "Done. Generating startup script..."
 	echo "#! /bin/bash" > /etc/init.d/collector_startup.sh
-	echo pwd "/run.sh" >> /etc/init.d/collector_startup.sh
-	update-rc.d collector_startup.sh defaults
+	echo "$(pwd)/run.sh" >> /etc/init.d/collector_startup.sh
 	chmod 755 /etc/init.d/collector_startup.sh
+	update-rc.d collector_startup.sh defaults
 	echo "Done. Installation complete."
 	
 else
